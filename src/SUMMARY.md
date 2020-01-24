@@ -5,5 +5,9 @@
   - [repl.it과 expo snack 써보기](./2020-01-20/replit과-expo-snack-써보기.md)
   - [메모리와 코드](./2020-01-20/메모리와-코드.md)
   - [값과 변수](./2020-01-20/값과-변수.md)
+- [두번째 날 2020-01-27](./2020-01-27/summary.md)
+  - [expo snack 빈 프로젝트 시작하기](./2020-01-27/expo-snack-empty-project.md)
+  <!-- - [새로운 컴포넌트 추가하기](./2020-01-27/add-a-new-component.md) -->
+  <!-- - [체크박스 추가하기]() -->
 - [부록](./appendix/summary.md)
   - [var-let-const](./appendix/var-let-const.md)
