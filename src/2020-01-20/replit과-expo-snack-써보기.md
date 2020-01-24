@@ -22,6 +22,8 @@ replit의 페이지는 크게 세 영역으로 나뉜다. 맨 왼쪽은 파일�
 다음 코드를 repl.it에 붙여넣고 실행시키자. 위의 "Run" 버튼을 누르면 코드가 실행된다.
 단축키로 Ctrl-Enter혹은 Cmd-Enter를 입력해도 실행된다.
 
+[//]: # (복사해서 붙여넣는 것보다 직접 쳐서 써보는 걸 추천, 에러메시지도 직접 봐보고 수정해보는 경험이 필요하다.)
+
 ```js
 const hiMsg = "Hello World";
 console.log(hiMsg);
