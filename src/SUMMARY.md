@@ -6,8 +6,9 @@
   - [메모리와 코드](./2020-01-20/메모리와-코드.md)
   - [값과 변수](./2020-01-20/값과-변수.md)
 - [두번째 날 2020-01-27](./2020-01-27/summary.md)
-  - [expo snack 빈 프로젝트 시작하기](./2020-01-27/expo-snack-empty-project.md)
-  <!-- - [새로운 컴포넌트 추가하기](./2020-01-27/add-a-new-component.md) -->
-  <!-- - [체크박스 추가하기]() -->
+  - [expo snack 빈 프로젝트 시작하기](./2020-01-27/1-expo-snack-empty-project.md)
+  - [새로운 컴포넌트 추가하기](./2020-01-27/2-add-a-new-component.md)
+  - [스위치 추가하기](./2020-01-27/3-switches.md)
+  - [연습: 스스로 컴포넌트 추가해보기](./2020-01-27/4-practice.md)
 - [부록](./appendix/summary.md)
   - [var-let-const](./appendix/var-let-const.md)
