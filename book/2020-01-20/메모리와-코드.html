@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html lang="ko" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>메모리와 코드 - </title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../start.html"><strong aria-hidden="true">1.</strong> 시작</a></li><li class="expanded "><a href="../2020-01-20/summary.html"><strong aria-hidden="true">2.</strong> 첫번째 날 2020-01-20</a></li><li><ol class="section"><li class="expanded "><a href="../2020-01-20/목표.html"><strong aria-hidden="true">2.1.</strong> 목표</a></li><li class="expanded "><a href="../2020-01-20/replit과-expo-snack-써보기.html"><strong aria-hidden="true">2.2.</strong> repl.it과 expo snack 써보기</a></li><li class="expanded "><a href="../2020-01-20/메모리와-코드.html" class="active"><strong aria-hidden="true">2.3.</strong> 메모리와 코드</a></li><li class="expanded "><a href="../2020-01-20/값과-변수.html"><strong aria-hidden="true">2.4.</strong> 값과 변수</a></li></ol></li><li class="expanded "><a href="../2020-01-27/summary.html"><strong aria-hidden="true">3.</strong> 두번째 날 2020-01-27</a></li><li><ol class="section"><li class="expanded "><a href="../2020-01-27/1-expo-snack-empty-project.html"><strong aria-hidden="true">3.1.</strong> expo snack 빈 프로젝트 시작하기</a></li><li class="expanded "><a href="../2020-01-27/2-add-a-new-component.html"><strong aria-hidden="true">3.2.</strong> 새로운 컴포넌트 추가하기</a></li><li class="expanded "><a href="../2020-01-27/3-switches.html"><strong aria-hidden="true">3.3.</strong> 스위치 추가하기</a></li><li class="expanded "><a href="../2020-01-27/4-practice.html"><strong aria-hidden="true">3.4.</strong> 연습: 스스로 컴포넌트 추가해보기</a></li></ol></li><li class="expanded "><a href="../2020-02-03/summary.html"><strong aria-hidden="true">4.</strong> 세번째 날 2020-02-03</a></li><li><ol class="section"><li class="expanded "><a href="../2020-02-03/1-code-jump.html"><strong aria-hidden="true">4.1.</strong> 코드와 jump</a></li><li class="expanded "><a href="../2020-02-03/2-if.html"><strong aria-hidden="true">4.2.</strong> if문</a></li></ol></li><li class="expanded "><a href="../appendix/summary.html"><strong aria-hidden="true">5.</strong> 부록</a></li><li><ol class="section"><li class="expanded "><a href="../appendix/var-let-const.html"><strong aria-hidden="true">5.1.</strong> var-let-const</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title"></h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#메모리와-코드" id="메모리와-코드">메모리와 코드</a></h1>
+<p>컴퓨터에서 가장 중요한 부품은 CPU와 메모리다.
+컴퓨터의 모든 기능은 간단하게 말해서, 
+&quot;CPU는 메모리에서 값을 읽어서 정해진 연산을 한 뒤 다시 메모리에 값을 쓴다.&quot;
+로 요약할 수 있다.</p>
+<p>프로그래밍이란 무엇을 어떻게 메모리에 저장될 지를 결정하고,
+해당 값을 변경하는 일련의 명령어들을 작성하는 작업이다.</p>
+<p>우리가 작성한 코드는 컴퓨터가 실행할 수 있는 형식으로 변형되며, 이 변형과정을 컴파일이라고 하고,
+컴파일을 하는 도구를 컴파일러라고 부른다.</p>
+<p>우리가 사용할 JavaScript는 쉽게 쓰기 위해서 컴파일과 실행의 사이가 모호하게 설계한 언어다.
+별도의 컴파일러가 필요하지 않으며, JavaScript 소스 코드를 실행시켜주는 프로그램이 존재하며 이를
+JavaScript 인터프리터 혹은 JavaScript 런타임이라고 부른다.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../2020-01-20/replit과-expo-snack-써보기.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../2020-01-20/값과-변수.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../2020-01-20/replit과-expo-snack-써보기.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../2020-01-20/값과-변수.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
