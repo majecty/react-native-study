@@ -1,5 +1,6 @@
 # Summary
 
+- [시작](./start.md)
 - [첫번째 날 2020-01-20](./2020-01-20/summary.md)
   - [목표](./2020-01-20/목표.md)
   - [repl.it과 expo snack 써보기](./2020-01-20/replit과-expo-snack-써보기.md)
