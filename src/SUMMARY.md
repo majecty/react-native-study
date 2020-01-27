@@ -11,5 +11,8 @@
   - [새로운 컴포넌트 추가하기](./2020-01-27/2-add-a-new-component.md)
   - [스위치 추가하기](./2020-01-27/3-switches.md)
   - [연습: 스스로 컴포넌트 추가해보기](./2020-01-27/4-practice.md)
+- [세번째 날 2020-02-03](./2020-02-03/summary.md)
+  - [코드와 jump](./2020-02-03/1-code-jump.md)
+  - [if문](./2020-02-03/2-if.md)
 - [부록](./appendix/summary.md)
   - [var-let-const](./appendix/var-let-const.md)
