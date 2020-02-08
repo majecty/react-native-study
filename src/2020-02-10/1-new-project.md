@@ -8,3 +8,10 @@ snack.expo.io에 접속하면 예시 프로젝트가 보인다. 오른쪽 위의
 ![view snacks 버튼 누르기 이미지](./1-1-view-snacks.jpeg)
 
 ## new snack 이미지
+
+"View snacks" 버튼을 눌렀다면 내가 만든 snack의 리스트를 볼 수 있는 페이지가 뜬다. 오른쪽 아래에 "create a new snack" 버튼을 눌러서 새 스낵을 만들자.
+
+![create a new snack 버튼 누르기 이미지](./1-2-new-snack.jpeg)
+
+## 스낵의 이름 설정하기
+
