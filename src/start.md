@@ -18,3 +18,7 @@ React Native와 JavaScript를 도구로 프로그래밍의 기초를
 ## [넷째 날](./2020-02-10/summary.md)
 
 리스트 UI를 다룬다.
+
+## [다섯째 날](./2020-02-25/summary.md)
+
+for문과 array에 대해 배운다.
