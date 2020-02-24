@@ -41,16 +41,16 @@ react native paper의 Switch를 우리가 만든 Switches.js 파일에서 사용
 아래 코드를 보고 components/Switches.js 파일을 따라서 수정하자.
 
 ```jsx
-import * as React from 'react';
-import { Text, View, StyleSheet, Image } from 'react-native';
+import * as React from "react";
+import { Text, View, StyleSheet, Image } from "react-native";
 
 // react-native-paper에 있는 Switches 컴포넌트와 Paragraph 컴포넌트를 불러들인다.
-import { Switch, Paragraph } from 'react-native-paper';
+import { Switch, Paragraph } from "react-native-paper";
 
 export default class Switches extends React.Component {
   // 예시코드처럼 state에 isSwitchOn을 추가한다.
   state = {
-    isSwitchOn: false,
+    isSwitchOn: false
   };
 
   render() {
@@ -82,13 +82,14 @@ export default class Switches extends React.Component {
           <Switch
             value={isSwitchOn}
             onValueChange={() => {
-              {/* 아래 줄은 Switch를 누를 때마다 현재 상태 isSwitchOn 변수의 값을 출력한다. */}
+              {
+                /* 아래 줄은 Switch를 누를 때마다 현재 상태 isSwitchOn 변수의 값을 출력한다. */
+              }
               console.log(isSwitchOn);
               this.setState({ isSwitchOn: !isSwitchOn });
             }}
           />
         </View>
-
       </View>
     );
   }
@@ -96,27 +97,26 @@ export default class Switches extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 24,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 24
   },
   paragraph: {
     margin: 24,
     marginTop: 0,
     fontSize: 14,
-    fontWeight: 'bold',
-    textAlign: 'center',
+    fontWeight: "bold",
+    textAlign: "center"
   },
   row: {
-    width: '100%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    width: "100%",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     paddingVertical: 8,
-    paddingHorizontal: 16,
-  },
+    paddingHorizontal: 16
+  }
 });
-
 ```
 
 ### 로그 확인하기
@@ -133,5 +133,6 @@ Expo snack에서 출력되는 값을 확인하자.
 화면의 스위치를 누를 때마다 true 혹은 false가 출력되는 것을 확인해보자.
 
 [^로그란]: 프로그래머가 프로그램이 잘 동작하는지 확인하기 위해 프로그램의 상태를
+
 짧은 글로 남기는데 이를 로그라 부른다. 로그를 찍는다. 로그를 프린트한다. 로그를 확인한다.
 표현들을 주로 사용한다.

@@ -1,5 +1,4 @@
-expo snack 빈 프로젝트 시작하기
-=============================
+# expo snack 빈 프로젝트 시작하기
 
 ## 프로젝트 생성
 
@@ -41,7 +40,8 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.paragraph}>
-          Change code in the editor and watch it change on your phone! Save to get a shareable url.
+          Change code in the editor and watch it change on your phone! Save to
+          get a shareable url.
         </Text>
         <Card>
           <AssetExample />
@@ -60,17 +60,17 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
     paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#ecf0f1',
-    padding: 8,
+    backgroundColor: "#ecf0f1",
+    padding: 8
   },
   paragraph: {
     margin: 24,
     fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
+    fontWeight: "bold",
+    textAlign: "center"
+  }
 });
 ```
 
