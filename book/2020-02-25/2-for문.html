@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html lang="ko" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>for문 - </title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../start.html"><strong aria-hidden="true">1.</strong> 시작</a></li><li class="expanded "><a href="../2020-01-20/summary.html"><strong aria-hidden="true">2.</strong> 첫 번째 날 2020-01-20</a></li><li><ol class="section"><li class="expanded "><a href="../2020-01-20/목표.html"><strong aria-hidden="true">2.1.</strong> 목표</a></li><li class="expanded "><a href="../2020-01-20/replit과-expo-snack-써보기.html"><strong aria-hidden="true">2.2.</strong> repl.it과 expo snack 써보기</a></li><li class="expanded "><a href="../2020-01-20/메모리와-코드.html"><strong aria-hidden="true">2.3.</strong> 메모리와 코드</a></li><li class="expanded "><a href="../2020-01-20/값과-변수.html"><strong aria-hidden="true">2.4.</strong> 값과 변수</a></li></ol></li><li class="expanded "><a href="../2020-01-27/summary.html"><strong aria-hidden="true">3.</strong> 두 번째 날 2020-01-27</a></li><li><ol class="section"><li class="expanded "><a href="../2020-01-27/1-expo-snack-empty-project.html"><strong aria-hidden="true">3.1.</strong> expo snack 빈 프로젝트 시작하기</a></li><li class="expanded "><a href="../2020-01-27/2-add-a-new-component.html"><strong aria-hidden="true">3.2.</strong> 새로운 컴포넌트 추가하기</a></li><li class="expanded "><a href="../2020-01-27/3-switches.html"><strong aria-hidden="true">3.3.</strong> 스위치 추가하기</a></li><li class="expanded "><a href="../2020-01-27/4-practice.html"><strong aria-hidden="true">3.4.</strong> 연습: 스스로 컴포넌트 추가해보기</a></li></ol></li><li class="expanded "><a href="../2020-02-03/summary.html"><strong aria-hidden="true">4.</strong> 세 번째 날 2020-02-03</a></li><li><ol class="section"><li class="expanded "><a href="../2020-02-03/1-연산자.html"><strong aria-hidden="true">4.1.</strong> 연산자</a></li><li class="expanded "><a href="../2020-02-03/2-블록.html"><strong aria-hidden="true">4.2.</strong> 블록</a></li><li class="expanded "><a href="../2020-02-03/3-if문.html"><strong aria-hidden="true">4.3.</strong> if문</a></li><li class="expanded "><a href="../2020-02-03/4-if문-연습.html"><strong aria-hidden="true">4.4.</strong> if문-연습</a></li></ol></li><li class="expanded "><a href="../2020-02-10/summary.html"><strong aria-hidden="true">5.</strong> 네 번째 날 2020-02-10</a></li><li><ol class="section"><li class="expanded "><a href="../2020-02-10/1-switch-and-if.html"><strong aria-hidden="true">5.1.</strong> 스위치 컴포넌트와 if문</a></li><li class="expanded "><a href="../2020-02-10/2-new-project.html"><strong aria-hidden="true">5.2.</strong> 새 expo 프로젝트 만들기</a></li><li class="expanded "><a href="../2020-02-10/3-리스트-만들기.html"><strong aria-hidden="true">5.3.</strong> 리스트 UI 만들기</a></li><li class="expanded "><a href="../2020-02-10/4-버튼-만들기.html"><strong aria-hidden="true">5.4.</strong> 버튼 만들기</a></li><li class="expanded "><a href="../2020-02-10/5-버튼으로-숫자-조절.html"><strong aria-hidden="true">5.5.</strong> 버튼으로 숫자 값 조절하기</a></li><li class="expanded "><a href="../2020-02-10/6-스테이트에-따라-다른-리스트.html"><strong aria-hidden="true">5.6.</strong> 스테이트 값에 따라서 리스트 갯수 바꾸기</a></li></ol></li><li class="expanded "><a href="../2020-02-25/summary.html"><strong aria-hidden="true">6.</strong> 다섯 번째 날 2020-02-25</a></li><li><ol class="section"><li class="expanded "><a href="../2020-02-25/1-반복.html"><strong aria-hidden="true">6.1.</strong> 반복</a></li><li class="expanded "><a href="../2020-02-25/2-for문.html" class="active"><strong aria-hidden="true">6.2.</strong> for문</a></li><li class="expanded "><a href="../2020-02-25/3-for문-n반복.html"><strong aria-hidden="true">6.3.</strong> for문의 패턴 첫 번째: n번 반복하기</a></li><li class="expanded "><a href="../2020-02-25/4-array.html"><strong aria-hidden="true">6.4.</strong> array</a></li><li class="expanded "><a href="../2020-02-25/5-array-와-for.html"><strong aria-hidden="true">6.5.</strong> array와 for문</a></li></ol></li><li class="expanded "><a href="../appendix/summary.html"><strong aria-hidden="true">7.</strong> 부록</a></li><li><ol class="section"><li class="expanded "><a href="../appendix/var-let-const.html"><strong aria-hidden="true">7.1.</strong> var-let-const</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title"></h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#for-문" id="for-문">for 문</a></h1>
+<p>JavaScript언어는 반복을 위한 문법으로 for문과 while문을 제공한다.</p>
+<h2><a class="header" href="#for문의-구조" id="for문의-구조">for문의 구조</a></h2>
+<p>for문은 하는 일에 비하여 복잡한 문법을 가지고 있다.
+각 문법 구조가 하는 일을 이해한 뒤 자주 쓰이는 패턴을 외우자.</p>
+<p>아래는 for문의 예시다.</p>
+<pre><code class="language-javascript">for (
+  let iterationCount = 0;
+  iterationCount &lt; 2;
+  iterationCount = iterationCount + 1
+) {
+  console.log(iterationCount);
+}
+</code></pre>
+<p>for문은 3가지 요소로 이루어져 있다. <code>for</code> 키워드, <code>()</code>로 둘러쌓인 3가지 식.
+<code>{}</code>로 둘러쌓인 반복하는 코드.
+그 중 <code>()</code>로 둘러쌓인 3가지 식이 복잡하니 뒤에서 다시 설명하겠다.</p>
+<h2><a class="header" href="#for문-풀어보기" id="for문-풀어보기">for문 풀어보기</a></h2>
+<p>for문을 동작을 이해하기 위해서는 반복되는 코드를 직접 풀어써 서보면 도움이 된다.
+위의 예시 코드와 똑같은 동작을 하는 코드를 for문 없이 만들어보자.</p>
+<p>아래는 for문의 동작을 풀어 쓴 예시다.</p>
+<pre><code class="language-javascript">let iterationCount = 0;
+if (iterationCount &lt; 2) {
+  console.log(iterationCount);
+  iterationCount = iterationCount + 1;
+
+  if (iterationCount &lt; 2) {
+      console.log(iterationCount);
+      iterationCount = iterationCount + 1;
+
+      if (iterationCount &lt; 2) {
+          console.log(iterationCount);
+          iterationCount = iterationCount + 1;
+          ...
+      }
+  }
+}
+</code></pre>
+<p>위 예시의 코드를 한 줄 한 줄 풀어서 이해해보자.</p>
+<h3><a class="header" href="#1-번째-줄" id="1-번째-줄">1 번째 줄</a></h3>
+<pre><code class="language-javascript">let iterationCount = 0;
+</code></pre>
+<p>시작은 변수의 선언이다. 이 변수는 두 가지 용도로 사용된다.
+하나는 지금까지 반복을 몇 번 했는지 표시하는 용도다.
+다른 하나는 종료 조건을 확인하기 위한 용도다.
+다른 코드를 더 읽으며 사용 예를 확인하자.</p>
+<h3><a class="header" href="#2-번째-줄" id="2-번째-줄">2 번째 줄</a></h3>
+<pre><code class="language-javascript">if (iterationCount &lt; 2) {
+</code></pre>
+<p>변수를 선언한 뒤 바로 종료 조건을 확인한다.
+예시의 for문은 <code>iterationCount &lt; 2</code> 이면 반복한다.
+<code>iterationCount &gt;= 2</code>가 되었을 때 반복을 끝낸다.
+아직 <code>iterationCount</code>의 값이 0이므로 if문 안에 진입한다.</p>
+<h3><a class="header" href="#3-번째-줄" id="3-번째-줄">3 번째 줄</a></h3>
+<pre><code class="language-javascript">console.log(iterationCount);
+</code></pre>
+<p>3 번째 줄은 우리가 반복할 코드다.
+이 코드의 동작은 iterationCount를 출력하는 것이다.</p>
+<h3><a class="header" href="#4-번째-줄" id="4-번째-줄">4 번째 줄</a></h3>
+<pre><code class="language-javascript">iterationCount = iterationCount + 1;
+</code></pre>
+<p>4 번째 줄은 iterationCount 값을 하나 증가시킨다.
+iterationCount 값은 이전에 0이었고, 이 줄을 실행 후에 1이 된다.</p>
+<h3><a class="header" href="#6-번째-줄" id="6-번째-줄">6 번째 줄</a></h3>
+<p>5 번째 줄은 비어있어서 바로 6 번째 줄이다.</p>
+<pre><code class="language-javascript">if (iterationCount &lt; 2) {
+</code></pre>
+<p>이 줄부터는 2 번째의 반복이다. iterationCount의 값이 1이므로 if문 안의
+블록을 실행한다.</p>
+<h3><a class="header" href="#7-번째-줄" id="7-번째-줄">7 번째 줄</a></h3>
+<pre><code class="language-javascript">console.log(iterationCount);
+</code></pre>
+<p>iterationCount값이 1이므로 1을 출력한다.</p>
+<h3><a class="header" href="#8-번째-줄" id="8-번째-줄">8 번째 줄</a></h3>
+<pre><code class="language-javascript">iterationCount = iterationCount + 1;
+</code></pre>
+<p>반복을 한 번 더 했으므로 iterationCount값을 하나 증가시킨다.
+8 번째 줄을 시작하기 전의 iterationCount의 값은 1이다.
+8 번째 줄을 시작한 후의 iterationCount의 값은 2이다.</p>
+<h3><a class="header" href="#10-번째-줄" id="10-번째-줄">10 번째 줄</a></h3>
+<p>9 번째 줄은 빈 줄이므로 생략한다.</p>
+<pre><code class="language-javascript">if (iterationCount &lt; 2) {
+</code></pre>
+<p>iterationCount의 값이 2이기 때문에 if문의 조건이 만족되지 않아
+if문의 block을 실행하지 않는다.</p>
+<h2><a class="header" href="#for-문의-세-요소-일반화" id="for-문의-세-요소-일반화">for 문의 세 요소 일반화</a></h2>
+<p>방금 풀어본 식을 일반화 해서 다시 확인하자.
+for 문 안의 4가지 요소를 각각 INITIALIZE_EXPRESSION, CONDITION, FINAL_EXPRESSION, STATEMENT
+라고 부르자.<sup class="footnote-reference"><a href="#mdn에서-가져온-용어">1</a></sup></p>
+<div class="footnote-definition" id="mdn에서-가져온-용어"><sup class="footnote-definition-label">1</sup>
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for">MDN의 for문 설명</a>에서 가져온 용어다.</p>
+</div>
+<pre><code class="language-javascript">for (INITIALIZE_EXPRESSION; CONDITION; FINAL_EXPRESSION) {
+  STATEMENT;
+}
+</code></pre>
+<p>이 for문을 풀면 다음과 같다.</p>
+<pre><code class="language-javascript">INITIALIZE_EXPRESSION;
+if (CONDITION) {
+  STATEMENT;
+  FINAL_EXPRESSION;
+
+  if (CONDITION) {
+      STATEMENT;
+      FINAL_EXPRESSION;
+
+      if (CONDITION) {
+          STATEMENT;
+          FINAL_EXPRESSION;
+          ...
+      }
+  }
+}
+</code></pre>
+<p>위 관계를 이해했다면 for문에 대한 모든 것을 끝냈다.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../2020-02-25/1-반복.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../2020-02-25/3-for문-n반복.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../2020-02-25/1-반복.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../2020-02-25/3-for문-n반복.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
