@@ -22,3 +22,7 @@ React Native와 JavaScript를 도구로 프로그래밍의 기초를
 ## [다섯째 날](./2020-02-25/summary.md)
 
 for문과 array에 대해 배운다.
+
+## [여섯째 날](./2020-03-09/summary.md)
+
+Input UI를 다룬다.
