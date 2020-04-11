@@ -27,7 +27,7 @@ for문과 array에 대해 배운다.
 
 Input UI를 다룬다.
 
-## [일곱번째 날](./2020-03-19/summary.md)
+## [일곱 번째 날](./2020-03-19/summary.md)
 
 함수와 오브젝트에 대해 배운다.
 
@@ -36,3 +36,9 @@ Input UI를 다룬다.
 트위터 타임라인을 만들어보자.
 
 ## [아홉 번째 날](./2020-04-06/summary.md)
+
+Object를 공부한다. CloudFlare Workers를 사용해서 간단한 웹서버를 만들어 본다.
+
+## [열 번째 날](./2020-04-13/summary.md)
+
+class를 공부한다. Electron fiddle을 사용해서 간단한 UI 프로그램을 작성한다.
